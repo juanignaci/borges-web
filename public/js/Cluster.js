@@ -6,8 +6,7 @@ function Cluster(x, y, nodeTexture, scene, controller)
 	var particles = [];
 
 	for (var i = PARTICLECOUNT - 1; i >= 0; i--)
-	{
-		
+	{		
 		var particle = new Node( 
 			x + (Math.random() * SCL * -2 + SCL),
 			(Math.random() * SCL * 2.5) - SCL * 0.25,

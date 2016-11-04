@@ -1,18 +1,3 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<title>Skybox (Three.js)</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-</head>
-<body>
-
-<script src="js/Three.js"></script>
-<script src="js/Cluster.js"></script>
-<script src="js/THREEx.KeyboardState.js"></script>
-
-<div id="ThreeJS" style="position: absolute; left:0px; top:0px"></div>
-<script>
 	// MAIN
 	// standard global variables
 	var container, scene, camera, renderer, controls, stats;
@@ -30,12 +15,15 @@
 	var lon = 90, lat = 0;
 	var phi = 0, theta = 0;
 	var grid, controller = new NodeController();
-	init();
+	// init();
 	animate();
 
 	// FUNCTIONS 		
 	function init() 
 	{
+		//Hide loader
+		document.getElementById('loader').style.display = "none";
+
 		// SCENE
 		scene = new THREE.Scene();
 		scene.fog = new THREE.Fog(0x000000, 5, 15);
@@ -104,13 +92,17 @@
 		{
 			if(controller.state == "intro")
 				controller.state = "idle";
-			
-			/*
-			else
-				controller.state = "intro";
-			*/
+			/*else
+				controller.state = "intro";*/
 		}
 
+		if(keyboard.pressed("b")) {
+			document.getElementById('big-modal').style.display = "block";
+		}
+
+		if(keyboard.pressed("s")) {
+			document.getElementById('small-modal').style.display = "block";
+		}
 
 		renderer.render( scene, camera );
 	}
@@ -175,7 +167,3 @@
 	}
 
 	function de2ra(degree)   { return degree*(Math.PI/180); }
-</script>
-
-</body>
-</html>
