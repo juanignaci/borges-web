@@ -10,6 +10,12 @@
     left: 48%;
     z-index: 1;
 }
+
+.loading-logo {
+  margin-left: -120px;
+  margin-top: -20px;
+}
+
 .ball {
     position: absolute;
     display: block;
