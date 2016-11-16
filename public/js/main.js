@@ -23,7 +23,7 @@
 	{
 		//Hide loader
 		document.getElementById('loader').style.display = "none";
-
+		
 		// SCENE
 		scene = new THREE.Scene();
 		scene.fog = new THREE.Fog(0x000000, 5, 15);

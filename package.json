@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "node index.js",
-    "debug": "ENV=dev PORT=9090 nodemon --watch public --watch index.js"
+    "debug": "ENV=dev PORT=9090 nodemon --watch public --watch index.js && cd ./public/libs/bootstrap && grunt watch"
   },
   "repository": {
     "type": "git",
