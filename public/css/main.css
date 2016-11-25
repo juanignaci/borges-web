@@ -16,6 +16,7 @@ hr {
 /* Loader */
 
 #loader {
+/*
 	position: absolute;
 	display: block;
 	top: 0;
@@ -23,7 +24,16 @@ hr {
 	width: 100%;
 	height: 100%;
 	z-index: 1010;
-	background-color: #000000;
+  	background:rgba(0,0,0,0.5);
+*/
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1010;
+  	background:rgba(0,0,0,0.5);
 }
 
 /* Loader end*/
@@ -59,11 +69,14 @@ hr {
     width: 100%;
     height: 100%;
     overflow: auto;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow:	 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.4s;
     animation-name: zoom;
     animation-duration: 0.4s
+}
+.container {
+	margin: 0;
 }
 
 #small-modal {
@@ -110,7 +123,8 @@ hr {
     padding: 10px;
     padding-left: 20px;
     padding-right: 20px;
-    /*max-width: 960px*/
+    max-width: 960px;
+	margin: 5% auto 5% auto;
 }
 
 .big-modal .close-btn {
@@ -121,8 +135,8 @@ hr {
 }
 
 .big-modal hr {
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin: 10px 0 10px 0;
+	/*margin-bottom: 10px;*/
 }
 
 .big-modal .social-buttons {

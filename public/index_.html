@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Borges Infinito</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/wingcss/0.1.8/wing.min.css"/>
+	<link rel="stylesheet" href="css/loader.css"/>
+	<link rel="stylesheet" href="css/main.css"/>
+</head>
+
+<body onload="init();">
+
+	<div id="loader">
+		<img src="./images/logo.png" class="loading-logo" width="274px" />
+
+		<div id="spinner" class="active">
+	        <span id="first" class="ball"></span>
+	        <span id="second" class="ball"></span>
+	        <span id="third" class="ball"></span>
+		</div>
+	</div>
+
+	<div id="container" class="container">
+		<div class='logo'></div>
+
+		<div id="small-modal" class='modal-container'>
+			<div class='small-modal'>
+				<h3>Borges titulo</h3>
+				<button class="btn btn-clear">Ver critica</button>
+			</div>
+		</div>
+
+		<div id="big-modal" class='modal-container'>
+			<div class='big-modal'></div>
+		</div>
+
+	</div>
+
+	<div id="ThreeJS" style="position: absolute; left:0px; top:0px"></div>
+	
+</body>
+
+<script src="js/Three.js"></script>
+<script src="js/THREEx.KeyboardState.js"></script>
+<script src="js/Cluster.js"></script>
+<script src="js/main.js"></script>
+<script src="js/ui.js"></script>
+
+</html>
